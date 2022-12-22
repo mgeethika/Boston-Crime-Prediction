@@ -10,7 +10,7 @@ library(tidyr)
 library(reshape2)
 library(formattable)
 
-crime<-read.csv('/Users/bharathpunati/Downloads/crime1.csv')
+crime<-read.csv('/Users/geethika/Downloads/crime1.csv')
 
 a<-subset(dummy,count>4000)
 a %>% ggplot(aes(x=reorder(OFFENSE_CODE_GROUP,count), y=count,fil=YEAR))+
